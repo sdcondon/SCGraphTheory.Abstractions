@@ -5,9 +5,9 @@
     <Description>Core graph theory interfaces.</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageTags>graphs graph theory</PackageTags>
-    <AssemblyName>GraphTheory.Abstractions</AssemblyName>
-    <RootNamespace>GraphTheory</RootNamespace>
+    <PackageTags>graphs graph theory abstractions</PackageTags>
+    <AssemblyName>SCGraphTheory.Abstractions</AssemblyName>
+    <RootNamespace>SCGraphTheory</RootNamespace>
   </PropertyGroup>
 
 </Project>

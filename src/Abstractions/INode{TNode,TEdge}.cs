@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace GraphTheory
+namespace SCGraphTheory
 {
     /// <summary>
     /// Interface for types representing a node in a <see cref="IGraph{TNode, TEdge}"/>.

@@ -1,4 +1,4 @@
-﻿namespace GraphTheory
+﻿namespace SCGraphTheory
 {
     /// <summary>
     /// Interface for types representing an edge in a <see cref="IGraph{TNode, TEdge}"/>.
