@@ -8,13 +8,7 @@
     <PackageTags>graphs graph theory abstractions</PackageTags>
     <AssemblyName>SCGraphTheory.Abstractions</AssemblyName>
     <RootNamespace>SCGraphTheory</RootNamespace>
-  </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>SCGraphTheory.Abstractions.xml</DocumentationFile>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>SCGraphTheory.Abstractions.xml</DocumentationFile>
   </PropertyGroup>
 
