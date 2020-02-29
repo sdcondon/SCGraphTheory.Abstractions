@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>Core graph theory interfaces.</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageTags>graphs graph theory</PackageTags>
+    <AssemblyName>GraphTheory.Abstractions</AssemblyName>
+    <RootNamespace>GraphTheory</RootNamespace>
+  </PropertyGroup>
+
+</Project>
