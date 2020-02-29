@@ -11,7 +11,11 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>G:\Code\Projects\SCGraphTheory.Abstractions\src\Abstractions\SCGraphTheory.Abstractions.xml</DocumentationFile>
+    <DocumentationFile>SCGraphTheory.Abstractions.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>SCGraphTheory.Abstractions.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>
