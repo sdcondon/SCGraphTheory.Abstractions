@@ -10,4 +10,8 @@
     <RootNamespace>SCGraphTheory</RootNamespace>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>G:\Code\Projects\SCGraphTheory.Abstractions\src\Abstractions\SCGraphTheory.Abstractions.xml</DocumentationFile>
+  </PropertyGroup>
+
 </Project>
