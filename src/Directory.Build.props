@@ -7,6 +7,7 @@
     <RepositoryUrl>https://github.com/sdcondon/SCGraphTheory.Abstractions.git</RepositoryUrl>
     <PackageProjectUrl>https://github.com/sdcondon/SCGraphTheory.Abstractions</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright>2020 Simon Condon</Copyright>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <Version>0.0.0-localbuild+localbuild</Version>
