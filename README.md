@@ -6,6 +6,6 @@ Example implementation and usage can be found in the separate [SCGraphTheory.Adj
 
 Additional (test-focused) implementation examples can be found among the test and benchmark projects in [SCGraphTheory.Search](https://github.com/sdcondon/SCGraphTheory.Search). Notably:
 - A super-simple (though rather inefficient) [LINQ-powered immutable implementation](https://github.com/sdcondon/SCGraphTheory.Search/blob/master/src/Search._Tests/_TestHelpers/Graph.cs). Used for tests in the search algorithm package.
-- A [square grid implementation using structs](https://github.com/sdcondon/SCGraphTheory.Search/blob/master/src/Search._Benchmarks/GraphImplementations/ValSquareGridGraph.cs). Involves no up front heap allocations other than a 2D array of node values, but performs relatively poorly under search because lots data gets moved around compared to a class-based implementation. Included in search benchmarks project because I was interested in the performance impact.
+- A [square grid implementation using structs](https://github.com/sdcondon/SCGraphTheory.Search/blob/master/src/Search._Benchmarks/GraphImplementations/ValSquareGridGraph.cs). Involves no up front heap allocations other than a 2D array of node values, but performs relatively poorly under search because lots of data gets moved around compared to a class-based implementation. Included in search benchmarks project because I was interested in the performance impact.
 
 
