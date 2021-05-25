@@ -2,14 +2,19 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Description>Core graph theory interfaces.</Description>
+    <Description>Core graph theory interfaces, to allow for graph algorithms that do not depend on a particular graph representation.</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageTags>graphs graph theory abstractions</PackageTags>
+    <PackageIcon>SCGraphTheoryIcon.png</PackageIcon>
     <AssemblyName>SCGraphTheory.Abstractions</AssemblyName>
     <RootNamespace>SCGraphTheory</RootNamespace>
 
     <DocumentationFile>SCGraphTheory.Abstractions.xml</DocumentationFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="SCGraphTheoryIcon.png" Pack="true" PackagePath=""/>
+  </ItemGroup>
 
 </Project>
