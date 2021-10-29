@@ -1,3 +1,5 @@
+![SCGraphTheory Icon](src/Abstractions/SCGraphTheoryIcon.png)
+
 # Graph Theory Abstractions
 
 [![NuGet version (SCGraphTheory.Abstractions)](https://img.shields.io/nuget/v/SCGraphTheory.Abstractions.svg?style=flat-square)](https://www.nuget.org/packages/SCGraphTheory.Abstractions/)
