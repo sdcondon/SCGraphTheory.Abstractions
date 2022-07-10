@@ -5,7 +5,7 @@
     <Description>Core graph theory interfaces, to allow for graph algorithms that do not depend on a particular graph representation.</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageTags>graphs graph-theory abstractions</PackageTags>
+    <PackageTags>graph theory abstractions</PackageTags>
     <PackageIcon>SCGraphTheoryIcon.png</PackageIcon>
     <AssemblyName>SCGraphTheory.Abstractions</AssemblyName>
     <RootNamespace>SCGraphTheory</RootNamespace>
