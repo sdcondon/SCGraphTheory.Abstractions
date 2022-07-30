@@ -2,10 +2,11 @@
   <PropertyGroup>
     <Authors>Simon Condon</Authors>
     <Company />
-    <Product>Graph Theory</Product>
+    <Product>SCGraphTheory</Product>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/sdcondon/SCGraphTheory.Abstractions.git</RepositoryUrl>
     <PackageProjectUrl>https://github.com/sdcondon/SCGraphTheory.Abstractions</PackageProjectUrl>
+    <PackageReleaseNotes>See https://github.com/sdcondon/SCGraphTheory.Abstractions/releases.</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Copyright>2020 Simon Condon</Copyright>
     <IncludeSymbols>true</IncludeSymbols>
