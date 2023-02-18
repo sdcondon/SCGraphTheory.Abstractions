@@ -26,12 +26,12 @@ spanning tree for an undirected graph. Which direction of an edge is included wo
 to deal with this. The addition of an edge-valued `Reverse` property, the addition of a property to indicate the "actual" underlying undirected edge (which is
 identical for reverse edges), and so on. See SCGraphTheory.AdjacencyList for an example of an undirected edge implementation with a Reverse property. The only cases
 where this is really going to cause a "problem" is for algorithms that enumerate the edges of a graph directly (i.e. not starting from a particular node or nodes),
-and operate specifically on undirected graphs. In such cases, you are likely to need to expand on the abstraction (again, probably using a `Reverse` and/or 
+and operate *specifically* on undirected graphs. In such cases, you are likely to need to expand on the abstraction (again, probably using a `Reverse` and/or 
 `Undirected` prop) in order to write the algorithm in the first place.  
   
-  A parting thought: one way of thinking about this abstraction is that it deals with edge traversals (which are inherently directed) rather than edges - and
-it is down to the consumer to decide how they want the two concepts to be related. This of course could result in a little extra work in certain cases, but does
-keep the abstraction very simple.
+  A final thought on this: one way of thinking about this abstraction is that it deals with edge traversals (which are inherently directed) rather than edges - and
+it is down to the consumer to decide how the two concepts are related in their usage. This of course could result in a little extra work in certain cases, but (in
+the author's humble opinion) in the vast majority of situations will not, and thus the resulting simplicity is worthwhile.
 * The declaration of the edges collection of each node as an `IReadOnlyCollection<TEdge>` necessitates boxing by consumers of these interfaces when this collection is a value type. See [an alternative formulation in the benchmarks project of the SCGraphTheory.Search](https://github.com/sdcondon/SCGraphTheory.Search/tree/main/src/Search.Benchmarks/AlternativeAbstractions/TEdges) for more on this.
 * Naming is hard:
   * Why `INode` and not `IVertex`? Simply because its shorter. I must confess that I am slightly regretting this one though..
