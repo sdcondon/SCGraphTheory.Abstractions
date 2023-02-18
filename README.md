@@ -13,9 +13,24 @@ Example implementation and usage can be found in the separate [SCGraphTheory.Adj
 - Some [and-or graph implementations](https://github.com/sdcondon/SCGraphTheory.Search/tree/main/src/Search.TestGraphs/Specialized/AndOr) that also serve as general examples of graphs with more than one edge and node type, and of graphs with reference type nodes/edges that are lazily initialised as the graph is explored.
 
 Notes:
-* The fact that the IEdge abstraction has a "From" and a "To" doesn't make this abstraction unsuitable for undirected graphs. Graph algorithms will generally traverse edges in a particular direction, making this a useful interface, and while the AdjacencyList implementation doesn't do this (thus favouring low latency over low memory usage), there's nothing stopping an implementation (with class-valued edges) from making the IEdge implementation a struct created from the "actual" edge, depending on the current node - thus avoiding "duplicated" undirected edges on the heap.  
+* The fact that the IEdge abstraction has a "From" and a "To" doesn't make this abstraction unsuitable for undirected graphs.
+Graph algorithms will generally traverse edges in a particular direction, making this a useful interface,
+and while the AdjacencyList implementation doesn't do this (thus favouring low latency over low memory usage),
+there's nothing stopping an implementation (with class-valued edges) from making the IEdge implementation a struct created from the "actual" edge,
+depending on the current node - thus avoiding "duplicated" undirected edges on the heap.  
   
-  ..Of course, the Edges property of IGraph returns IEdges, so necessarily should include both directions of an undirected edge - which could cause confusion. However, it should be noted that this is also justified by what it facilitates for algorithms using the abstraction. Consider Bellman-Ford, for example - which (iterates graph edges and) operates specifically on directed graphs. By including both directions of an undirected edge, we allow algorithms such as these to be used against all graphs that implement this abstraction correctly. In this way, treating the two directions of undirected edges separately is a form of normalisation.
+  Of course, the Edges property of IGraph returns IEdges, so necessarily should include both directions of an undirected edge - which could cause confusion.
+However, it should be noted that this is also justified by what it facilitates for algorithms using the abstraction.
+Consider Bellman-Ford, for example - which (iterates graph edges and) operates specifically on directed graphs.
+By including both directions of an undirected edge, we allow algorithms such as these to be used against all graphs that implement this abstraction correctly.
+In this way, treating the two directions of undirected edges separately is a form of normalisation.  
+  
+  ..I should however probably expand a little on the "confusion" mentioned above, and in general the downside of this simplicity. Consider the act of building a
+spanning tree. Which direction of an undirected edge is included would depend on where you start, which might not be ideal. There are of course ways to deal with
+this. The addition of an edge-valued `Reverse` property, the addition of a property to indicate the "actual" underlying edge (which is the same for reverse edges),
+careful `Equals` implementation, or a combination of these. One way of thinking about this abstraction (though we are perhaps straying into semantics here) is
+that it deals with edge traversals (which are inherently directed) rather than edges - and it is down to the consumer to decide how they want the two concepts to be
+related. This might result in a little extra work in certain cases, but does keep the abstraction very simple.
 * The declaration of the edges collection of each node as an `IReadOnlyCollection<TEdge>` necessitates boxing by consumers of these interfaces when this collection is a value type. See [an alternative formulation in the benchmarks project of the SCGraphTheory.Search](https://github.com/sdcondon/SCGraphTheory.Search/tree/main/src/Search.Benchmarks/AlternativeAbstractions/TEdges) for more on this.
 * Naming is hard:
   * Why `INode` and not `IVertex`? Simply because its shorter. I must confess that I am slightly regretting this one though..
