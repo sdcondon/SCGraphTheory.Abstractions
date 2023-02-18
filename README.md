@@ -27,7 +27,7 @@ In this way, treating the two directions of undirected edges separately is a for
   
   ..I should however probably expand a little on the "confusion" mentioned above, and in general the downside of this simplicity. Consider the act of building a
 spanning tree for an undirected graph. Which direction of an edge is included would depend on where you start, which might not be ideal. There are of course ways
-to deal with this. The addition of an edge-valued `Reverse` property, the addition of a property to indicate the "actual" underlying undirected edge (which is
+to deal with this. The addition of an edge-valued `Reverse` property, the addition of a property to indicate the "actual" underlying `Undirected` edge (which is
 identical for reverse edges), and so on. See SCGraphTheory.AdjacencyList for an example of an undirected edge implementation with a Reverse property. The only cases
 where this is really going to cause a "problem" is for algorithms that enumerate the edges of a graph directly (i.e. not starting from a particular node or nodes),
 and operate *specifically* on undirected graphs. In such cases, you are likely to need to expand on the abstraction (again, probably using a `Reverse` and/or 
