@@ -20,4 +20,4 @@ Note, however, that some musings about these interfaces *are* included in the pa
 ## Issues and Contributions
 
 I'm not expecting anyone to want to get involved given the low download figures on NuGet, but please feel free to do so.
-I do keep an eye on the [issues](https://github.com/sdcondon/SCFirstOrderLogic/issues) tab, and will add a CONTRIBUTING.md if anyone drops me a message expressing interest.
+I do keep an eye on the [issues](https://github.com/sdcondon/SCGraphTheory.Abstractions/issues) tab, and will add a CONTRIBUTING.md if anyone drops me a message expressing interest.
