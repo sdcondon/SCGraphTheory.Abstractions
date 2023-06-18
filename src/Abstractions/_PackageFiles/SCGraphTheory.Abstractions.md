@@ -1,5 +1,3 @@
-# Graph Theory Abstractions
-
 Interfaces for the three fundamental elements of [graph theory](https://en.wikipedia.org/wiki/Graph_theory) - [IGraph<TNode,TEdge>](https://github.com/sdcondon/SCGraphTheory.Abstractions/blob/main/src/Abstractions/IGraph%7BTNode%2CTEdge%7D.cs), [INode<TNode,TEdge>](https://github.com/sdcondon/SCGraphTheory.Abstractions/blob/main/src/Abstractions/INode%7BTNode%2CTEdge%7D.cs) and [IEdge<TNode,TEdge>](https://github.com/sdcondon/SCGraphTheory.Abstractions/blob/main/src/Abstractions/IEdge%7BTNode%2CTEdge%7D.cs) - to allow for graph algorithms that do not depend on a particular graph representation.
 
 Full documentation can be found [here](https://sdcondon.net/SCGraphTheory/abstractions).
