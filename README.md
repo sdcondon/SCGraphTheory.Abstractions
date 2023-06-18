@@ -1,4 +1,4 @@
-![SCGraphTheory Icon](src/Abstractions/SCGraphTheoryIcon.png)
+![SCGraphTheory Icon](src/Abstractions/_PackageFiles/SCGraphTheoryIcon.png)
 
 # Graph Theory Abstractions
 
