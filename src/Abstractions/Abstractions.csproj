@@ -15,15 +15,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="SCGraphTheoryIcon.png" Pack="true" PackagePath="" />
-    <None Include="README.md" Pack="true" PackagePath="" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="_PackageFiles\SCGraphTheory.Abstractions.md" Pack="true" PackagePath="README.md" />
+    <None Include="_PackageFiles\SCGraphTheoryIcon.png" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>
