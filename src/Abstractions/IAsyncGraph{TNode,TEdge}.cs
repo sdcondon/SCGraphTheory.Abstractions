@@ -15,8 +15,8 @@ namespace SCGraphTheory;
 /// <typeparam name="TNode">The type of each node of the graph.</typeparam>
 /// <typeparam name="TEdge">The type of each edge of the graph.</typeparam>
 public interface IAsyncGraph<out TNode, out TEdge>
-    where TNode : INode<TNode, TEdge>
-    where TEdge : IEdge<TNode, TEdge>
+    where TNode : IAsyncNode<TNode, TEdge>
+    where TEdge : IAsyncEdge<TNode, TEdge>
 {
     /// <summary>
     /// Gets the set of nodes of the graph.
