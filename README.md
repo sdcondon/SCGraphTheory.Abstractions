@@ -4,7 +4,7 @@
 
 [![NuGet version (SCGraphTheory.Abstractions)](https://img.shields.io/nuget/v/SCGraphTheory.Abstractions.svg?style=flat-square)](https://www.nuget.org/packages/SCGraphTheory.Abstractions/) 
 [![NuGet downloads (SCGraphTheory.Abstractions)](https://img.shields.io/nuget/dt/SCGraphTheory.Abstractions.svg?style=flat-square)](https://www.nuget.org/packages/SCGraphTheory.Abstractions/) 
-[![Commits since latest release](https://img.shields.io/github/commits-since/sdcondon/SCGraphTheory.Abstractions/latest?style=flat-square)](https://github.com/sdcondon/SCGraphTheory.Abstractions/compare/1.0.9...main)
+[![Commits since latest release](https://img.shields.io/github/commits-since/sdcondon/SCGraphTheory.Abstractions/latest?style=flat-square)](https://github.com/sdcondon/SCGraphTheory.Abstractions/compare/1.1.1...main)
 
 This repository contains the source code for the SCGraphTheory.Abstractions NuGet package.
 
