@@ -4,9 +4,13 @@ using System.Collections.Generic;
 namespace SCGraphTheory;
 
 /// <summary>
-/// Interface for types representing a graph for which navigation (specifically, enumeration of the outbound edges of a node, or of the nodes or edges of an entire graph) is asynchronous.
-/// <para/>
-/// Intended to be useful when navigating a graph requires (or may require) IO.
+/// <para>
+/// Interface for types representing a graph for which navigation can be asynchronous.
+/// </para>
+/// <para>
+/// It differs from <see cref="IGraph{TNode, TEdge}"/> in that the outbound edges of a node,
+/// as well as the nodes and edges of an entire graph, are <see cref="IAsyncEnumerable{T}"/>.
+/// </para>
 /// </summary>
 /// <typeparam name="TNode">The type of each node of the graph.</typeparam>
 /// <typeparam name="TEdge">The type of each edge of the graph.</typeparam>
