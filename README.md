@@ -14,7 +14,7 @@ For documentation of the package itself, see https://sdcondon.net/SCGraphTheory/
 
 ## Source Documentation
 
-I have not written up any documentation of the source. The package consists of just three interfaces - doing so would be entirely pointless.
+I have not written up any documentation of the source. The package consists of just six interfaces - doing so would be entirely pointless.
 Note, however, that some musings about these interfaces *are* included in the package documentation.
 
 ## Issues and Contributions
